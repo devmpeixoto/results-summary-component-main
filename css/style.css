@@ -60,6 +60,15 @@ p{
     color: hsl(241, 100%, 89%);
 }
 
+span{
+    font-weight: 700;
+    color: gray;
+}
+
+h3{
+    font-size: 16px;
+}
+
 .card{
     /* border: 2px solid red; */
     display: flex;
@@ -137,11 +146,6 @@ p{
     margin-bottom: 25px;
   }
 
-span{
-    font-weight: 700;
-    color: gray;
-  }
-
 .reaction, .memory, .verbal, .visual{
     display: flex;
     align-items: center;
@@ -162,15 +166,15 @@ span{
     background-color: hsla(0, 100%, 67%, 0.226);
 }
 
-.reaction > h4{
+.reaction > h3{
     color: hsl(0, 100%, 67%);
     margin-left: 10px;
 }
 
-.reaction > h5{
+.reaction > h4{
     margin-left: 60px;
     color: hsl(224, 30%, 27%);
-    font-size: 15px;
+    font-size: 13.5px;
 }
 
 .memory{
@@ -185,15 +189,15 @@ span{
     background-color: hsla(39, 100%, 56%, 0.226);
 }
 
-.memory > h4{
+.memory > h3{
     color: hsl(39, 100%, 56%);
     margin-left: 10px;
 }
 
-.memory > h5{
+.memory > h4{
     margin-left: 60px;
     color: hsl(224, 30%, 27%);
-    font-size: 15px;
+    font-size: 13.5px;
 }
 
 .verbal{
@@ -208,14 +212,14 @@ span{
     background-color: hsl(166, 100%, 37%, 0.226);
 }
 
-.verbal > h4{
+.verbal > h3{
     color: hsl(166, 100%, 37%);
 }
 
-.verbal > h5{
+.verbal > h4{
     margin-left: 60px;
     color: hsl(224, 30%, 27%);
-    font-size: 15px;
+    font-size: 13.5px;
 }
 
 .visual{
@@ -230,14 +234,14 @@ span{
     background-color:hsla(234, 85%, 45%, 0.226);
 }
 
-.visual > h4{
+.visual > h3{
     color:hsl(234, 85%, 45%);
 }
 
-.visual > h5{
+.visual > h4{
     margin-left: 60px;
     color: hsl(224, 30%, 27%);
-    font-size: 15px;
+    font-size: 13.5px;
 }
 
 button{
