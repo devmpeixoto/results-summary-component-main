@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+    font-family: 'Hanken Grotesk', sans-serif;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+p{
+    font-size: 18px;
+    color: hsl(241, 100%, 89%);
+}
+
+.card{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    width: 600px;
+    height: 420px;
+    box-shadow: 5px 2px 12px hsl(234deg 85% 97%);
+    border-radius: 25px;
+}
+
+  .left{
+    background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    height: 100%;
+    width: 50%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left > p{
+    /* border: 2px solid red; */
+    margin-bottom: 35px;
+    font-weight: 700;
+  }
+
+  .score{
+    background-image: linear-gradient(to bottom,rgba(69, 30, 175, 0.568),  transparent);
+    width: 150px;
+    height: 150px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+.score > h1{
+    /* border: 2px solid red; */
+    color: white;
+    font-size: 3.5rem;
+  }
+
+.score > p{
+    font-size: 14px;
+    font-weight: 700;
+    color: hsla(241, 100%, 89%, 0.61);
+}
+
+.description> h2, p{
+    text-align: center;
+}
+
+.description > h2{
+    color: white;
+    margin-bottom: 25px;
+}
+
+.description > p{
+    font-size: 14px;
+    padding: 0 50px;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 30px;
+  }
+
+  .right > h2{
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 25px;
+  }
+
+span{
+    font-weight: 700;
+    color: gray;
+  }
+
+.reaction, .memory, .verbal, .visual{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.reaction{
+    /* border: 2px solid red; */
+    background-color: hsla(0, 100%, 67%, 0.048);
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.reaction:hover{
+    cursor: default;
+    background-color: hsla(0, 100%, 67%, 0.226);
+}
+
+.reaction > h4{
+    color: hsl(0, 100%, 67%);
+    margin-left: 10px;
+}
+
+.reaction > h5{
+    margin-left: 60px;
+    color: hsl(224, 30%, 27%);
+    font-size: 15px;
+}
+
+.memory{
+    /* border: 2px solid red; */
+    background-color: hsla(39, 100%, 56%, 0.048);
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.memory:hover{
+    cursor: default;
+    background-color: hsla(39, 100%, 56%, 0.226);
+}
+
+.memory > h4{
+    color: hsl(39, 100%, 56%);
+    margin-left: 10px;
+}
+
+.memory > h5{
+    margin-left: 60px;
+    color: hsl(224, 30%, 27%);
+    font-size: 15px;
+}
+
+.verbal{
+    /* border: 2px solid red; */
+    background-color: hsl(166, 100%, 37%, 0.048);
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.verbal:hover{
+    cursor: default;
+    background-color: hsl(166, 100%, 37%, 0.226);
+}
+
+.verbal > h4{
+    color: hsl(166, 100%, 37%);
+}
+
+.verbal > h5{
+    margin-left: 60px;
+    color: hsl(224, 30%, 27%);
+    font-size: 15px;
+}
+
+.visual{
+    /* border: 2px solid red; */
+    background-color:hsl(234, 85%, 45%, 0.048);
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.visual:hover{
+    cursor: default;
+    background-color:hsla(234, 85%, 45%, 0.226);
+}
+
+.visual > h4{
+    color:hsl(234, 85%, 45%);
+}
+
+.visual > h5{
+    margin-left: 60px;
+    color: hsl(224, 30%, 27%);
+    font-size: 15px;
+}
+
+button{
+    background-color:hsl(224, 30%, 27%) ;
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: bold;
+    color: hsl(0, 0%, 100%);
+    transition: all .3s ease;
+}
+
+button:hover{
+    background-color:hsla(224, 30%, 27%, 0.514) ;
+    color: hsl(224, 30%, 27%);
+    transform: scale(1.005);
+    cursor: pointer;
+}
+
+@media (max-width: 620px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 720px;
+    }
+
+    .left{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .left > p{
+        margin: 15px;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    button{
+        margin: 7px;
+    }
+}
